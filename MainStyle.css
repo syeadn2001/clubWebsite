@@ -1,0 +1,252 @@
+/*  <h6>Engineering Event guest speaker of Pangea</h6>
+                    
+                    <h6> 3/10/2020 12:30 PM - 3/10/2020 2:00 PM IH-3143 2900 Bedford Ave 11210, Brooklyn, New York 
+                    </h6>
+                    
+                    <h6>
+                      Do join us in an engineering event where a guest speaker will come to talk about his experience and career as the co-founder and CEO of Pangea. 
+                      Adam, born in New York and a recent graduate from Brown University, is the Co-Founder and 
+                      CEO of Pangea.app, a mobile platform designed to cultivate and inspire the next generation of Freelancers. 
+                      Pangea.app allows college students to offer any skill or service to the local community (e.g. Event Help, Instruction, or Venture support). 
+                      It will be launching this September in Providence. 
+                      He is also the Associate Director of the Rhode Island Coalition of Entrepreneurs, a group built to make the entrepreneurial community more accessible.
+                    </h6>  */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  position: relative;
+  z-index: 1000000;
+}
+p {
+  font-size: 1.15rem;
+}
+
+b {
+  color: white;
+}
+
+.navbar {
+  background: transparent !important;
+  transition: 0.5s;
+}
+.navbar.scrolled {
+  background: #000 !important;
+  transition: 0.5s;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #000;
+  background: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/*galaxy background*/
+.banner {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(https://cdn.glitch.com/6efb1542-cc3b-49d2-b659-54e996751d19%2FGALAXY%5B1%5D.JPG?v=1565924613231);
+  background-size: cover;
+  margin-bottom: 0;
+  color: #fff;
+}
+.banner:before,
+.sec2:before,
+#contact:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(#000, transparent);
+  pointer-events: none;
+}
+.banner:after,
+.sec2:after,
+#contact:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(360deg, #000, transparent);
+  pointer-events: none;
+}
+.height100p {
+  height: 100vh;
+}
+.h100 {
+  height: 100%;
+}
+.contentBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 10;
+}
+.contentBox h1 {
+  font-weight: 800;
+  color: #fff;
+  font-size: 7vw;
+  padding: 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 1);
+}
+.sec1 {
+  padding: 200px 0;
+  background: #000;
+  height: 100vh;
+}
+h2 {
+  font-size: 5vw;
+  color: #fff;
+  margin-bottom: 20px;
+}
+p {
+  color: #fff;
+}
+
+/*Math background*/
+.sec2 {
+  position: relative;
+  background: url(https://cdn.glitch.com/6efb1542-cc3b-49d2-b659-54e996751d19%2FMath%5B1%5D.jpg?v=1565924592883);
+  background-size: cover;
+  height: 100vh;
+}
+.sec2 h2 {
+  box-shadow: 0 10px 40px rgb(0, 0, 0, 1);
+}
+.btnD1 {
+  border: 2px solid #fff;
+  color: #000;
+  background: #fff;
+  border-radius: 50px;
+  padding: 15px 50px;
+  font-size: 1.15rem;
+  outline: none;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.sec3 {
+  position: relative;
+  background: #000;
+  height: 100vh;
+}
+.card-header {
+  background: #fff;
+}
+.card-header h3 {
+  color: #000;
+}
+form {
+  padding-top: 30px;
+}
+.form-group {
+  padding: 10px 0;
+}
+
+/*circuit background*/
+#contact {
+  position: relative;
+  padding: 100px 0;
+  background: url(https://cdn.glitch.com/6efb1542-cc3b-49d2-b659-54e996751d19%2FCIRCUIT%5B1%5D.JPG?v=1565924627629);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#contact .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  height: 50px;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.25rem;
+}
+#contact .form-control:focus,
+#contact .form-control:hover {
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: none;
+}
+#contact .textarea {
+  min-height: 100px;
+}
+#contact label {
+  color: #fff;
+  font-size: 1.25rem;
+  float: left;
+}
+.contact form {
+  position: relative;
+  z-index: 1000;
+}
+@media (min-width: 992px) {
+  navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-light .navbar-toggler {
+    background: #fff;
+    border-radius: 0;
+  }
+  .banner {
+    min-height: 100vh;
+    padding: 100px 0;
+  }
+  .contentBox h1,
+  .sec1 h2,
+  .sec2 h2,
+  .sec3 h2,
+  .sec4 h2 {
+    font-size: 2rem;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .sec1 {
+    padding: 100px 0;
+  }
+  .headerText h2 {
+    font-size: 2rem;
+  }
+  .contact {
+    padding: 20px 0;
+  }
+  .contact .form-control {
+    height: 40px;
+    border: 2px solid #fff;
+  }
+  .sec2 {
+    height: auto;
+    padding: 40px 0;
+  }
+}
+Oh God, forgive my sin and expand me in my home and bless me in my livelihood
